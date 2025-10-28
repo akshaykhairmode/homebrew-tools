@@ -5,21 +5,21 @@
 class Wscli < Formula
   desc "A command-line WebSocket client"
   homepage "https://github.com/akshaykhairmode/wscli"
-  version "2.0.5"
+  version "2.0.6"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/akshaykhairmode/wscli/releases/download/v2.0.5/wscli_Darwin_x86_64.tar.gz"
-      sha256 "0d4bf65b92e1ec237320f071399138d3cb89a8de8a5712a4ca284579ee95fb1f"
+      url "https://github.com/akshaykhairmode/wscli/releases/download/v2.0.6/wscli_Darwin_x86_64.tar.gz"
+      sha256 "7b741345017227d73cc840f7642f392a85f7c3c15de54a92f569661343e49842"
 
       def install
         bin.install "wscli"
       end
     end
     on_arm do
-      url "https://github.com/akshaykhairmode/wscli/releases/download/v2.0.5/wscli_Darwin_arm64.tar.gz"
-      sha256 "859a8a8ab3a5859a8223dc9e21764d2cf4615e7427c4c02a5cd535b4e5d49bdc"
+      url "https://github.com/akshaykhairmode/wscli/releases/download/v2.0.6/wscli_Darwin_arm64.tar.gz"
+      sha256 "8d08509b579a1349f17d1af6ae57c5235d24a6ea05ed618c3e57de1c49c1c2fb"
 
       def install
         bin.install "wscli"
@@ -30,8 +30,8 @@ class Wscli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/akshaykhairmode/wscli/releases/download/v2.0.5/wscli_Linux_x86_64.tar.gz"
-        sha256 "565257de1c582afa744a738ba0c6df7a12e04faa293777c2fc900ac312f0e330"
+        url "https://github.com/akshaykhairmode/wscli/releases/download/v2.0.6/wscli_Linux_x86_64.tar.gz"
+        sha256 "158a9207b550ca79ba50a0266f1f7e99c6107ac4e19107960efeadf00e38f80b"
 
         def install
           bin.install "wscli"
@@ -40,8 +40,8 @@ class Wscli < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/akshaykhairmode/wscli/releases/download/v2.0.5/wscli_Linux_armv6.tar.gz"
-        sha256 "61740854ec903f43b1b89890b042947fc1c4788fad96bee3a78787af09f3ede3"
+        url "https://github.com/akshaykhairmode/wscli/releases/download/v2.0.6/wscli_Linux_armv6.tar.gz"
+        sha256 "d0371f0029f614725b28df52a9cdef287c8725b0d5963ec36783fcbfb17a44ed"
 
         def install
           bin.install "wscli"
@@ -50,8 +50,8 @@ class Wscli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/akshaykhairmode/wscli/releases/download/v2.0.5/wscli_Linux_arm64.tar.gz"
-        sha256 "1dc67f1b331f946324b9e54f7e71260a48465ecb1e9254d23442466de96b1ee4"
+        url "https://github.com/akshaykhairmode/wscli/releases/download/v2.0.6/wscli_Linux_arm64.tar.gz"
+        sha256 "d9a8c13584bcd56149558f23cbc7e6cd1163100147df9c1856c7d0b98475b1e9"
 
         def install
           bin.install "wscli"
